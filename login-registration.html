@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="login-registration.css" type="text/css" rel="stylesheet">
+    <title>login_registration</title>
+</head>
+<body>
+    <h1>đăng ký thông tin</h1>
+    <div class="container-sm" >
+        <form action="" class="row g-3"  >
+            <div class="col-12">
+                <label for="name">Name</label>
+                <input type="text" onkeydown="checkEmpty()"  placeholder="tên tài khoản " class="form-control" id="name">
+                <span id="required-name"></span>
+            </div>
+            <div class="col-12">
+                <label for="email">Email</label>
+                <input type="text" onkeydown="checkEmpty()" placeholder="thitxoi12@gmail.com" class="form-control" id="email">
+                <span id="required-email"></span>
+            </div>
+            <div class="col-sm-6">
+                <label for="Phone">Phone</label>
+                <input type="text" onkeydown="checkEmpty()" class="form-control" id="phone">
+                <span id="required-phone"></span>
+            </div>
+            <div class="col-sm-6">
+                <label for="birthdayd">birthday</label>
+                <input type="date" onkeydown="checkEmpty()" class="form-control" id="birthday">
+                <span id="required-birthday"></span>
+            </div>
+            <div  onkeydown="checkEmpty()" >
+                <div class="col-12">
+                    <input type="radio" class="form-check-input" name="flexradio" id="sex" >
+                    <label class="form-check-label">Nam</label></br>
+                </div>
+                <div class="col-12">
+                    <input type="radio" class="form-check-input" name="flexradio" id="sex">
+                    <label class="form-check-label">Nữ</label>
+                </div>
+                <span id="required-sex"></span>
+            </div>
+            <div class="col-12 form-floating">
+                <textarea class="form-control" style="width: 100%; height: 150px;" placeholder="conment"></textarea>
+            </div>
+            <div class="col-4">
+                <input type="checkbox" onkeydown="checkEmpty()" class="form-check-input" id="agree">
+                <label class="form-check-label">Đồng Ý Điều Khoản</label>
+                <span id="required-agree"></span>
+            </div>
+            <div class="col-4">
+                <input type="checkbox" onkeydown="checkEmpty()" class="form-check-input" id="agree1">
+                <label class="form-check-label">Gửi Mail Nhập Tin Tức</label>
+                <span id="required-agree"></span>
+            </div>
+            <span id="required-agree"></span>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <button id="submit" type="button" class="btn btn-primary col-1 disabled">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<script src="login-registration.js"></script>
+</html>
